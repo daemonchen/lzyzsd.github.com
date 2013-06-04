@@ -259,16 +259,26 @@
         </div>
     </div>
 
+    <div class="step slide" data-x="0" data-y="0">
+        <div class="title"><strong>Map/Reduce</strong></div>
+        <div class="silde-content">
+            <p>Why Map/Reduce?</p><br>
+            <p>是不是觉得这个完全可以用sql实现啊，干嘛这么扭曲思维地写成Map/Reduce</p>
+            <p></p>
+            <ul>
+                <li>1.数据量大的时候，RDBS查询很慢，这种耗时的查询是不推荐在RDBS中使用的</li>
+                <li>2.Map/Reduce的写法很容易做到分布式，可以使用集群加速。(Reduce要做到幂等),Facebook号称上万台机器组成hadoop集群</li>
+                <li>3.Map/Reduce可以做成background jobs来运行（推荐使用hadoop来做这种离线数据处理）</li>
+                <li>4.新世纪福音战士--facebook，推出了Hive，我们可以使用sql语句来写Map/Reduce，妈妈再也不用担心我要写Java了。(XD)</li>
+            </ul>
+        </div>
+    </div>
+
     <div class="step slide" data-x="1000" data-y="0">
         <div class="title"><strong>Map/Reduce</strong></div>
         <div class="silde-content">
-            <p>Map/Reduce function in underscore</p><br>
-            <code class="language-javascript">
-                var books = [{name:"coffee", number: 1}, {name: "coffee", number: 1}, {name: "java", number: 1}];<br><br>
-                var map_result = _.map(books, function(book){ return [book.name, book.number] });<br><br>
-                _.reduce(map_result, function(memo, book){ memo[book[0]] |= 0; memo[book[0]] += book[1]; return memo }, {})
-            </code><br><br>
-            <p>Result: {coffee: 2, java: 1}</p>
+            <p>Map/Reduce demo from Hadoop</p><br>
+            <img src="http://www.jiacheo.org/wp-content/uploads/2011/09/%E5%9B%BE%E7%89%872.png">
         </div>
     </div>
     <!--
