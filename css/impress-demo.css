@@ -281,6 +281,37 @@ a:focus {
     font-size: 32px;
 }
 
+.title {
+    display: block;
+    font-size: 50px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 45px;
+    line-height: 65px;
+}
+
+.slide-content {
+    display: block;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.silde-content>table {
+    font-size: 20px;
+}
+
+.silde-content>table tr td {
+    text-align: center;
+}
+
+.footnote {
+    font-size: 32px;
+    text-align: center;
+}
+
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
     any special styling.
